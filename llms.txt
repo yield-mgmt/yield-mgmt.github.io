@@ -1,0 +1,18 @@
+# YIELD MGMT Consulting
+
+> Leadership development and organizational consulting for small and mid-size growth tech companies in Israel, founded by Yaniv Cherkasky (25 years in tech). Works in Hebrew and English, in person and remotely.
+
+## Services
+- Manager development: workshops and 1:1 programs, from first-line managers to executives.
+- Organizational consulting and process improvement: research, root cause analysis, execution with milestones, KPIs and ROI.
+- AI tools (such as Anthropic Claude and Microsoft Copilot) for organizational knowledge management and automation.
+
+## Contact
+- Free intro meeting: https://calendar.app.google/RiDn3kMLKi5TUeUF8
+- Email: cherkasky.yaniv@gmail.com
+- Phone / WhatsApp: +972-54-772-2569
+- LinkedIn: https://www.linkedin.com/in/yaniv-cherkasky-42aab611
+
+## Pages
+- Hebrew (default): https://yield-mgmt.github.io/
+- English: https://yield-mgmt.github.io/en/
