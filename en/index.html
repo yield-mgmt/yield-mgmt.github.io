@@ -233,13 +233,13 @@ a.chip svg { width: 18px; height: 18px; fill: var(--accent-text); flex: none; }
 .langbar{display:none;align-items:center;justify-content:center;gap:12px;padding:8px 16px;background:var(--surface);border-bottom:1px solid var(--line);font-size:.9rem}
 .langbar a{color:var(--fg);font-weight:700}
 .langbar button{background:none;border:0;color:var(--muted);font-size:1.1rem;cursor:pointer;padding:4px 8px}
-.legal{max-width:760px;margin:10px auto 0;font-size:.78rem;line-height:1.6;color:var(--muted);text-align:center}
-.legal a{color:inherit}
+.legal{max-width:760px;margin:10px auto 0;font-size:.875rem;line-height:1.6;color:var(--muted);text-align:center}
+.legal a{color:inherit;display:inline-block;padding:12px 6px;min-height:44px;box-sizing:border-box}
 </style>
 </head>
 <body>
 <a class="skip" href="#main">Skip to content</a>
-<div class="langbar" id="langbar" lang="he" dir="rtl"><span>This page is also available in English</span><a href="../" hreflang="he">English</a><button type="button" id="langx" aria-label="Close">×</button></div>
+<div class="langbar" id="langbar" lang="he" dir="rtl"><span>הדף זמין גם בעברית</span><a href="../" hreflang="he" id="langhe">עברית</a><button type="button" id="langx" aria-label="סגירה">×</button></div>
 <div class="wrap">
   <header class="top">
     <a class="brand" href="#main" aria-label="YIELD MGMT Consulting">
@@ -420,7 +420,7 @@ a.chip svg { width: 18px; height: 18px; fill: var(--accent-text); flex: none; }
 
 
 <script>
-(function(){try{var l=(navigator.languages&&navigator.languages[0])||navigator.language||"";var he=/^he|^iw/i.test(l);var page="en";if(((page==="he")!==he)&&!sessionStorage.getItem("yl")){document.getElementById("langbar").style.display="flex"}}catch(e){}var x=document.getElementById("langx");if(x)x.onclick=function(){document.getElementById("langbar").style.display="none";try{sessionStorage.setItem("yl","1")}catch(e){}}})();
+(function(){var l=(navigator.languages&&navigator.languages[0])||navigator.language||"";var he=/^he|^iw/i.test(l);var c="",d="";try{c=localStorage.getItem("ylang")||"";d=sessionStorage.getItem("yl")||""}catch(e){}var bar=document.getElementById("langbar");if(bar&&he&&c!=="en"&&!d){bar.style.display="flex"}var x=document.getElementById("langx");if(x)x.onclick=function(){bar.style.display="none";try{sessionStorage.setItem("yl","1")}catch(e){}};var sw=document.querySelectorAll(".lang a");for(var i=0;i<sw.length;i++){sw[i].addEventListener("click",function(){try{localStorage.setItem("ylang",this.getAttribute("hreflang"))}catch(e){}})}})();
 /* Organization scan: departments as node clusters, a scan sweeps across, bottlenecks light up. */
 (function () {
   var cv = document.getElementById("scan"), ctx = cv.getContext("2d");
